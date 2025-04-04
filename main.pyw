@@ -31,11 +31,11 @@ root.minsize(500, 400)
 random_name = ttk.StringVar()
 random_name.set('')
 
-with open(join(folder,'adj.txt'), encoding='u8') as f:
+with open(join(folder,'assets', 'adj.txt'), encoding='u8') as f:
     adjective_list = f.read().splitlines()
-with open(join(folder,'n.txt'), encoding='u8') as f:
+with open(join(folder,'assets', 'n.txt'), encoding='u8') as f:
     noun_list = f.read().splitlines()
-with open(join(folder,'v.txt'), encoding='u8') as f:
+with open(join(folder,'assets', 'v.txt'), encoding='u8') as f:
     verb_list = f.read().splitlines()
 
 nameFrame = ttk.Frame()
